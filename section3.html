@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Including the Font Awesome CSS library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Links to different sections -->
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">How it Works</a>
+        <a href="section2.html">Integrating Data</a>
+
+        <!-- Active link pointing to the section3.html page -->
+        <a class="active" href="section3.html">Additional Features</a>
+
+        <a href="see_also.html">See Also</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Section 3 content -->
+        <div class="tab">
+            <button class="tablinks" onclick="openTab(event, 'Feature 1')">Feature 1</button>
+            <button class="tablinks" onclick="openTab(event, 'Feature 2')">Feature 2</button>
+            <button class="tablinks" onclick="openTab(event, 'Feature 3')">Feature 3</button>
+        </div>
+        <div id="Feature 1" class="tabcontent" style="display: none;">
+            <h3>Feature 1</h3>
+            <p>Additional tax types, such as gas taxes and tpp taxes.</p>
+        </div>
+          
+        <div id="Feature 2" class="tabcontent" style="display: none;">
+            <h3>Feature 2</h3>
+            <p>Checkboxes for tax credits and deductions.</p>
+        </div>
+          
+        <div id="Feature 3" class="tabcontent" style="display: none;">
+            <h3>Feature 3</h3>
+            <p>Functionality for calculating tax cost before and after marriage in a given jurisdiction.</p>
+        </div>
+    </div>
+
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

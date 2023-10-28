@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Page Title</title>
+
+    <!-- Including the main.css file for styling -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- Including the Font Awesome CSS library for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <!-- Navigation bar -->
+    <div class="topnav" id="myTopnav">
+        <!-- Links to different sections -->
+        <a href="index.html">Abstract</a>
+        <a href="section1.html">How it Works</a>
+
+        <!-- Active link pointing to the section2.html page -->
+        <a class="active" href="section2.html">Integrating Data</a>
+
+        <a href="section3.html">Additional Features</a>
+        <a href="see_also.html">See Also</a>
+
+        <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links on smaller screens -->
+        <a href="javascript:void(0);" class="icon">
+            <i class="fa fa-bars"></i>
+        </a>
+    </div>
+
+    <!-- Page content -->
+    <div class="content">
+        <!-- Section 2 content -->
+        Using geocoding, data regarding the tax rates set by the state, county, and municipality of a given region would be integrated into the map. An additional calculation for 
+federal income tax would also be added on for the purposes of the gross annual tax cost display.
+        <br>
+        <br>
+        <button class="accordion">Income Tax Brackets</button>
+        <div class="panel">
+            <p>Since several jurisdictions implement an income tax that varies by the bracket an individual's income falls into, an additional step would have to be implemented
+                to calculate the tax bracket of the user.</p>
+        </div>
+        <br>
+        <button class="accordion">Property Tax and Median House Cost</button>
+        <div class="panel">
+            <p>Since a user would likely look at property tax for the sake of planning to buy future property, it would be pertinent to display the median housing cost
+                for a given geographical region; which would thus require an additional layer of data to be encoded.</p>
+        </div>
+    <!-- Including the main.js file for JavaScript functionality -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
